@@ -5,10 +5,15 @@ This repo is for development of the initial chef-compliance course
 After completing this course, you should be able to:
 
 Install and initially configure the Chef Compliance server
+
 Perform scans with Chef Compliance
+
 Remediate a compliance issue
+
 Run Compliance Reports
+
 Use InSpec to create and modify Chef Compliance profiles
+
 View compliance statistics for a node
 
 Note: You should have attended at least Chef Essentials, Chef Fundamentals or have equivalent Chef experience prior to attending this course.
