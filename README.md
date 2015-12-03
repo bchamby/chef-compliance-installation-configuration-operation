@@ -1,4 +1,4 @@
-# chef-compliance
+# chef-compliance-installation-configuration-operation
 This repo is for development of the initial chef-compliance course
 
 # Objectives:
