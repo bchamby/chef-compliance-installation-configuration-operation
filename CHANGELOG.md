@@ -19,6 +19,7 @@ Changes made by Nathen in preparation for a Compliacne Workshop at a pop-up even
 ### 03-initial-configuration-scans
 
 * An updated screen shot of adding a node
+* Add a period after 'Log into your target node.'
 * Leave the 'environment' field blank, a 'default' environment will be automatically created.
 * Adjust the arrow pointing at the base/ssh compliance profile
 * Update screen shot in Scan Results
