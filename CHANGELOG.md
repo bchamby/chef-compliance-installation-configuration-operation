@@ -41,3 +41,5 @@ Changes made by Nathen in preparation for a Compliacne Workshop at a pop-up even
 * Downloading the zipped profile and uploading it are two different objectives
 * Align the output of the zip command
 * Correct the title of the slide when re-scanning the node 'Scan Your Node' instead of 'Upload the Profile to Chef Compliance'
+* Fix spacing of the tmp.rb code
+* Use a backtick (`), not a quote (') when wrapping '`inspec check`'
