@@ -32,6 +32,7 @@ Changes made by Nathen in preparation for a Compliacne Workshop at a pop-up even
 
 ### 05-creating-custom-profiles
 
+* Add a missing period to the first objective
 * Update objective:  'Use InSpec...' not 'Using InSpec...'
 * Spell out 'command line interface'
 * Change the header of the slide for creating the profile directory
