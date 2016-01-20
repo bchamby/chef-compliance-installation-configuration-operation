@@ -8,6 +8,7 @@ Changes made by Nathen in preparation for a Compliacne Workshop at a pop-up even
 
 * Add another objective to the course, participants will be able to describe the capabilities of Chef Compliance.
 * List '...create, modify, and test...' without an extra 'and'
+* Oxford comma for pre-built profiles
 * Do not mention Serverspec.  It should be in the instructor notes and the instructor should be ready to answer questions about it.  Learners who have no experience with Serverspec may be confused by the reference.
 * Show some sample InSpec when describing it.
 
