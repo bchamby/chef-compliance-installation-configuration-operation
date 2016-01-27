@@ -4,17 +4,12 @@ This repo is for development of the initial chef-compliance course
 # Objectives:
 After completing this course, you should be able to:
 
-Install and initially configure the Chef Compliance server
-
-Perform scans with Chef Compliance
-
-Remediate a compliance issue
-
-Run Compliance Reports
-
-Use InSpec to create and modify Chef Compliance profiles
-
-View compliance statistics for a node
+Install and initially configure the Chef Compliance server.
+Perform scans with Chef Compliance.
+Remediate compliance issues.
+Schedule and run compliance reports.
+Use InSpec to create, modify, and test Chef Compliance profiles.
+Manage Users, Organizations, Teams and Permissions
 
 Note: You should have attended at least Chef Essentials, Chef Fundamentals or have equivalent Chef experience prior to attending this course.
 
@@ -22,22 +17,36 @@ Note: You should have attended at least Chef Essentials, Chef Fundamentals or ha
 # Classroom Lab
 The hands-on labs require the following infrastructure which should be provided by the instructor and specified in Appendix Z.
 
-Two standard AWS AMIs per student that are the same as the AMIs used in Chef Essentials training but upgrade to ChefDk 0.10.x
-We need to put the chef user in the dockerroot group and make /var/run/docker.sock's group dockerroot in the future training images.
+Two standard AWS Linux instances per student that use the same as the AMI used in Chef Essentials training but upgrade to ChefDk 0.10.x
+We need to put the chef user in the dockerroot group and make /var/run/docker.sock's group dockerroot in the training image.
 We need to build the shell init stuff for chef dk into the AMI images--the equivalent of 'echo 'eval "$(chef shell-init bash)"' >> ~/.bash_profile' then log out and in.
 
-Students will install Chef Compliance on one instance and use the second instance to run compliance scans against.
+Students will install Chef Compliance on one instance and use the second Linux instance to run compliance scans against.
 
-# Student Workstations
+One Windows node per student to be used as a second target and as a virtual Windows workstation. The Windows node should use Sean's ami-ae1a4cc4 but with inspec preinstalled and the path to inspec added to the user's PATH variable (c:\Users\Administrator\AppData\Local\chefdk\gem\ruby\2.1.0\gems\inspec-0.9.7\bin\inspec)  ?
+Something akin to this might set the PATH variable."chef shell-init powershell | Invoke-Expression" >> $PROFILE
 
-Each student will need their own laptop workstation with the same specs as for Chef Essentials training.This course will not require virtual workstations.
+Test Kitchen should be preconfigured to work on the Windows node too.
+
+# Student Laptops
+
+Each student will need their own laptop workstation with the same specs as for Chef Essentials training. The student laptops need to be able to ssh to Linux nodes and use HTTP to use the Compliance Server. The student's laptops should also have a Remote Desktop Client that supports RDP:
+
+Windows 7 with Remote Desktop Connection
+
+Mac OS X 10.11 (El Capitan) with Microsoft Remote Desktop
+
+Ubuntu 12.04 with Remmina Remote Desktop Client
+
+
+This course requires at least one Linux virtual workstation as stated above.
 
 # Modules
-1. Intro
+1. Introduction
 2. Installation
 3. Running Scans, Remediation, and Testing
-4. Using Compliance Profiles
-5. Compliance Reports
-6. Applying Compliance Frameworks using InSpec
-7. Overview of using Compliance with Delivery?
-8. Additional Resources
+4. Running Scans on Windows Nodes
+5. Creating Custom Profiles
+6. Scheduling Scans and Running Compliance Reports
+7. Applying Compliance Frameworks using InSpec
+8. Users, Organizations, Teams, and Permissions
