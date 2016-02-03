@@ -4,12 +4,13 @@ This repo is for development of the initial chef-compliance course
 # Objectives:
 After completing this course, you should be able to:
 
+Describe the capabilities of Chef Compliance.
 Install and initially configure the Chef Compliance server.
 Perform scans with Chef Compliance.
 Remediate compliance issues.
-Schedule and run compliance reports.
 Use InSpec to create, modify, and test Chef Compliance profiles.
-Manage Users, Organizations, Teams and Permissions
+Schedule and run compliance reports.
+Manage users, organizations, teams and permissions.
 
 Note: You should have attended at least Chef Essentials, Chef Fundamentals or have equivalent Chef experience prior to attending this course.
 
@@ -27,6 +28,8 @@ One Windows node per student to be used as a second target and as a virtual Wind
 Something akin to this might set the PATH variable."chef shell-init powershell | Invoke-Expression" >> $PROFILE
 
 Test Kitchen should be preconfigured to work on the Windows node too.
+
+Note: Two AMIs have been created for this course that cover the above requirements and are specified in Appendix Z.
 
 # Student Laptops
 
@@ -47,6 +50,6 @@ This course requires at least one Linux virtual workstation as stated above.
 3. Running Scans, Remediation, and Testing
 4. Running Scans on Windows Nodes
 5. Creating Custom Profiles
-6. Scheduling Scans and Running Compliance Reports
-7. Applying Compliance Frameworks using InSpec
+6. Applying Compliance Frameworks using InSpec
+7. Scheduling Scans and Running Compliance Reports
 8. Users, Organizations, Teams, and Permissions
