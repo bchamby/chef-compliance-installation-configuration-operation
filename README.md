@@ -95,7 +95,7 @@ This content requires the attendee to have 2 Linux Nodes and 1 Windows Node.
 
 * Compliance - CentOS 6.7 - 1.0.3 (ami-0d6f4267)
 
-* Compliance - Windows2012R2 - 1.0.0 (ami-????????)
+* Compliance - Windows 2012 - 1.0.0 (ami-0af8d260)
 
 > The CentOS AMI was generated with the following [ChefDK Image Project](https://github.com/chef-training/chefdk-fundamentals-image). The Windows AMI was generated manually based on scripts found in the the [ChefDK Image Project](https://github.com/chef-training/chefdk-fundamentals-image). If you would like access to this AMI to deliver training please contact [training@chef.io](mailto:training@chef.io) the request that includes your Amazon Account Id.
 
@@ -160,10 +160,24 @@ Set-ExecutionPolicy RemoteSigned
 chef gem install kitchen-ec2
 ```
 
-* Add `inspec` to the PATH variable
+* Add `C:\opscode\chefdk\embedded\bin` to the PATH.
 
 ```
-c:\Users\Administrator\AppData\Local\chefdk\gem\ruby\2.1.0\gems\inspec-0.9.7\bin\inspec)
+$LocalMachinePathRegKey = 'HKLM:\System\CurrentControlSet\Control\Session Manager\Environment'
+$ChefDkEmbeddedBin = 'C:\opscode\chefdk\embedded\bin'
+
+Push-Location
+Set-Location $LocalMachinePathRegKey
+$CurrentPath = (Get-ItemProperty . Path).Path
+$PathWithInSpec = "$CurrentPath;$ChefDkEmbeddedBin"
+Set-ItemProperty . -Name Path -Value $PathWithInSpec
+Pop-Location
+```
+
+* Update the Version of InSpec to a known working version
+
+```
+Invoke-Expression "chef gem install inspec -v 0.10.1"
 ```
 
 * Enable remote administration via WINRM
