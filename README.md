@@ -18,7 +18,7 @@ After completing this course, you should be able to:
 
 Attendees need a network-enabled laptop with a terminal that supports SSH and a Remote Desktop Client that supports RDP.
 
-* Windows 7 through [Putty](http://www.putty.org/) or [Cygwin with OpenSSH](https://www.cygwin.com/) and with [Remote Desktop Connection](http://www.wikihow.com/Use-Remote-Desktop-in-Windows-7)
+* Windows 7+ with [Putty](http://www.putty.org/) or [Cygwin with OpenSSH](https://www.cygwin.com/) and with [Remote Desktop Connection](http://www.wikihow.com/Use-Remote-Desktop-in-Windows-7)
 
 * Mac OS X 10.11 (El Capitan) with [Microsoft Remote Desktop](https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12)
 
