@@ -4,6 +4,15 @@ This repo is a repository for developing Chef Compliance.
 
 ## Abstract / Description
 
+The Chef Compliance Installation, Configuration, and Operation course is an instructor-led course covering the Chef Compliance solution. In this course you will learn how to install and initially configure the Chef Compliance server, perform compliance scans against Windows and Linux nodes, remediate compliance issues with Chef, and run Compliance reports.
+
+In addition, you will learn how to use InSpec to create and modify Chef Compliance profiles and learn how to locate CIS (Center for Internet Security) and DoD (Department of Defense) compliance specifications that you can use to write Chef Compliance profiles. This course includes hands-on exercises to reinforce the material.
+
+Prerequisite: You should have attended at least Chef Essentials, Chef Fundamentals or have equivalent Chef experience prior to attending this course.
+
+
+##Objectives:
+
 After completing this course, you should be able to:
 
 * Describe the capabilities of Chef Compliance.
@@ -39,6 +48,7 @@ It’s best that learners have some familiarity and comfort with the following:
 6. Applying Compliance Frameworks using InSpec
 7. Scheduling Scans and Running Compliance Reports
 8. Users, Organizations, Teams, and Permissions
+9. Further Resources
 
 ## Published Content
 
