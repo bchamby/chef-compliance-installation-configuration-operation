@@ -94,6 +94,7 @@ Login to the Windows Node and run the following:
 ```
 $ gem install inspec -v 0.10.1
 ```
+* Module 05-creating-custom-profiles is under construction so it will support ChefDK  0.11.2 (which includes inspec 0.14.2) . inspec 0.14.2 changes module 05-creating-custom-profiles to use `inspec init profile` and the new `inspec compliance upload'.
 
 ## Environment
 
