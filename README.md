@@ -42,8 +42,8 @@ It’s best that learners have some familiarity and comfort with the following:
 
 1. Introduction
 2. Installation
-3. Running Scans, Remediation, and Testing
-4. Running Scans on Windows Nodes
+3. Running Scans, Remediation, and Testing - Linux
+4. Running Scans, Remediation, and Testing - Windows
 5. Creating Custom Profiles
 6. Applying Compliance Frameworks using InSpec
 7. Scheduling Scans and Running Compliance Reports
