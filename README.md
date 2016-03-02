@@ -80,21 +80,7 @@ How to export the content from [slides to guides](https://drive.google.com/file/
 ) for Chef members.
 
 ## Known Issues
-
-* Module 04 - At the current moment the version of InSpec (0.9.2) that ships with Chef Development Kit (ChefDK) and the Chef Compliance Server does not properly support Windows. To complete the Group Lab defined in this module you will need to update both versions of InSpec
-
-Login to the Compliance Server and run the following:
-
-```
-$ sudo /opt/chef-compliance/embedded/bin/gem install inspec -v 0.10.1
-```
-
-Login to the Windows Node and run the following:
-
-```
-$ gem install inspec -v 0.10.1
-```
-* Module 05-creating-custom-profiles is under construction so it will support ChefDK  0.11.2 (which includes inspec 0.14.2) . inspec 0.14.2 changes module 05-creating-custom-profiles to use `inspec init profile` and the new `inspec compliance upload'.
+None but be sure to use the correct AMIs specified in Appendix Z. inspec 0.14.7 is installed on these AMIs and is critical to successful inspec-related labs.
 
 ## Environment
 
@@ -104,9 +90,9 @@ These modules focus on getting learners engaged with the content as quickly as p
 
 This content requires the attendee to have 2 Linux Nodes and 1 Windows Node.
 
-* Compliance - CentOS 6.7 - 1.0.3 (ami-0d6f4267)
+* Compliance - CentOS 6.7 - 1.0.6 (ami-740b321e)
 
-* Compliance - Windows 2012 - 1.0.0 (ami-0af8d260)
+* Compliance - Windows 2012 - 1.0.2 – (ami-570c353d)
 
 > The CentOS AMI was generated with the following [ChefDK Image Project](https://github.com/chef-training/chefdk-fundamentals-image). The Windows AMI was generated manually based on scripts found in the the [ChefDK Image Project](https://github.com/chef-training/chefdk-fundamentals-image). If you would like access to this AMI to deliver training please contact [training@chef.io](mailto:training@chef.io) the request that includes your Amazon Account Id.
 
